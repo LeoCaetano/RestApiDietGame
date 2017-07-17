@@ -6,4 +6,5 @@ const con = mysql.createConnection({
   password: "yourpassword"
 });
 
+
 export {con};
