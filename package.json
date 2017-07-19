@@ -5,10 +5,12 @@
   "main": "server.js",
   "dependencies": {
     "express": "4.x",
-    "mysql": "^2.13.0"
+    "getmodule": "^1.0.0",
+    "mysql": "^2.13.0",
+    "express-myconnection": "^1.0.4"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./www/server"
   },
   "keywords": [
     "server",
