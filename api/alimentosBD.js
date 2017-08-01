@@ -12,7 +12,7 @@ exports.profile = function(req, res) {
  	var id = req.params.id;
 
 	req.getConnection(function(err,connection){
-		connection.query('SELECT * FROM alimentos WHERE id = ?',[id],function(err,result){
+		connection.query('SELECT * FROM alimento WHERE id = ?',[id],function(err,result){
 			if(err) return res.status(400).json(err);
 
 			return res.status(200).json(result[0]);
